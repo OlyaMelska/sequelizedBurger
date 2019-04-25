@@ -1,0 +1,31 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon server",
+    "start": "node server",
+    "init-db": "mysql -u root < ./db/schema.sql",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlyaMelska/burger.git"
+  },
+  "author": "Olha Melska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlyaMelska/burger/issues"
+  },
+  "homepage": "https://github.com/OlyaMelska/burger#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "jquery": "^3.4.0",
+    "mysql": "^2.16.0",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.7.1",
+    "sequelize-cli": "^5.4.0"
+  }
+}
