@@ -1,18 +1,14 @@
 {
   "development": {
-    "username": process.env.MYSQL_USER,
-    "password": null,
-    "database": process.env.MYSQL_DB,
-    "host": process.env.MYSQL_HOST,
+    "username": "root",
+    "password": "",
+    "database": "burgers_db",
+    "host": "localhost",
     "port": 3306,
     "dialect": "mysql"
   },
   "production": {
-    "use_env_variable”": "mysql://lm95yf8pa5ryy6zq:krswffsjoa0f84n9@a5s42n4idx9husyc.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/umhzgc40o6g7c3ku",
-    "dialect": "mysql",
-    "username": process.env.JAWSDB_USER,
-    "password": process.env.JAWSDB_KEY,
-    "database": process.env.JAWSDB_DB,
-    "host": process.env.JAWSDB_HOST
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
   }
 }

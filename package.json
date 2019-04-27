@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/OlyaMelska/burger#readme",
   "dependencies": {
+    "dotenv": "^7.0.0",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
     "jquery": "^3.4.0",

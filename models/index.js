@@ -10,9 +10,8 @@ console.log("config: " + JSON.stringify(config));
 const db = {};
 
 let sequelize;
-if (process.env.JAWSDB_URL) {
-  console.log("in here");
-  sequelize = new Sequelize(process.env[config.use_env_variable], config);
+if (config.use_env_variable) {
+  sequelize = new Sequelize(process.env[config.use_env_variable]);
 } else {
   sequelize = new Sequelize(
     config.database,
