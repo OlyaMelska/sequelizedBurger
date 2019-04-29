@@ -18,7 +18,7 @@ $("#submit").on("click", event => {
 
 $(".devour").on("click", element => {
   let id = element.target.getAttribute("value");
-  //   element.target.remove();
+  element.target.remove();
   let devoured = {
     devoured: true
   };
